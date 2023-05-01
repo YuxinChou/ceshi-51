@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 52px">
+  <head>
+    <meta charset="utf-8" />
+    <title>@发之食谱 的个人主页</title>
+    <meta name="description" content="发之食谱在「小红书」上有1.1万+位粉丝，已关注-人，来「小红书」查看更多发之食谱分享的视频和笔记"/>
+    <meta name="keywords" content="小红书,小红书购物笔记,福利社,red,RED,little red book,xiaohongshu"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta name="mobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+  </head>
+  <body style="height: auto;">
+    <div id="app" style="height: auto;">
+      <div class="note-view-container" style="height: auto;">
+        <div class="narmal-note-container" style="padding-top: 53px; padding-bottom: 58px;">
+          <div class="launch-app-container" style="position: fixed; top: 0; width: 100%; z-index: 100;">
+            <div id="author-nav-bg" style="width: 100%; height: 53px; background-color: #3d4e65; opacity: 0; text-align: center;">
+              <img width="36" height="36" src="./images/author/author_head.png" style="border-radius: 50%; margin-top: 8px;"/>
+              <div style="position: absolute; top: 13px; right: 54px;">
+                <span style="display: inline-block; border-radius: 20px; color: #fff; padding: 4px 12px 6px; background: #fd3748; font-size: 14px;">关注</span>
+              </div>
+            </div>
+          </div>
+          <div class="launch-app-container" style="position: fixed; top: 0; width: 100%; z-index: 110;">
+            <img id="author-nav" width="100%" alt="作者" src="./images/author_nav.png" />
+            <a href="./search.html" style="display: block; width: 24px; height: 28px; position: absolute; top: 10px; left: 16px;"></a>
+          </div>
+          <div class="launch-app-container" style="background-color: #3d4e66;">
+              <img id="author-id" width="100%" src="./images/author/id_new.png" style="margin-top: -46px;"/>
+          </div>
+          <div class="launch-app-container" style="position: relative;">
+            <div id="author-favor-bg" style="width: 100%; height: 47px;"></div>
+            <img id="author-favor" width="100%" src="./images/author_favor.png" style="z-index: 10; background-color: #3d4e66; position: absolute; top: 0;"/>
+          </div>
+          <div class="scroll-view-container">
+            <div class="tab-detail">
+              <div class="note-container">
+                <div class="launch-app-container"></div>
+                <div class="launch-app-container" id="faxian">
+                  <div class="reds-dual-row dual-col">
+                    <div class="reds-dual-col-item" id="faxian-col1">
+                    </div>
+                    <div class="reds-dual-col-item" id="faxian-col2">
+                    </div>
+                  </div>
+                </div>
+                <div class="launch-app-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onscroll = function() {
+        var authorNavBg = document.querySelector('#author-nav-bg');
+        var authorFavor = document.querySelector('#author-favor');
+        var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
+        var topValue = (scrollTop - 70)/100;
+        authorNavBg.style.opacity = topValue > 1 ? 1 : topValue < 0 ? 0 : topValue;
+        if (scrollTop > 185) {
+          authorFavor.style.position = 'fixed';
+          authorFavor.style.top = '53px';
+        } else {
+          authorFavor.style.position = 'absolute';
+          authorFavor.style.top = '0px';
+        }
+        if (scrollTop < 10) {
+          console.log('xxxx')
+          document.documentElement.scrollTop = 10;
+          document.body.scrollTop = 10;
+          window.pageYOffset = 10;
+        }
+      }
+
+      window.onload = function () {
+        var container = document.querySelector('.narmal-note-container');
+        var noteContainer = document.querySelector('.note-container');
+        var authorNav = document.querySelector('#author-nav');
+        var authorId = document.querySelector('#author-id');
+        var authorFavor = document.querySelector('#author-favor');
+
+        var faxian = document.querySelector('#faxian');
+        var col1 = document.querySelector('#faxian-col1');
+        var col2 = document.querySelector('#faxian-col2');
+        var data = ["1", "001", "2", "002", "3", "003", "4", "004", "5", "005", "6", "006", "7", "007", "008", "9", "009", "10", "0010", "15", "16", "19", "22", "23", "25", "26", "29", "37", "38", "43", "45", "48", "49", "51", "53", "59", "69", "70", "71", "75", "79", "81", "82", "84", "88", "89", "93", "94", "99", "107", "115", "119", "122", "123-1", "123-2", "123", "124", "125", "127", "128", "129", "130", "132", "133", "135", "136", "138", "140", "141", "148", "151", "152", "156", "158", "159", "160", "167", "173", "176", "177", "183", "", "191", "", "195", "198"];
+        //动态插入数据
+        for (var i = 0; i < data.length; i++) {
+          if (data[i]) {
+            var section = document.createElement('section');
+            var link = document.createElement('a');
+            var image = document.createElement('img');
+            section.id = data[i];
+            section.classList.add('eds-note-card');
+            section.classList.add('note-card');
+            image.src = "./images/faxian/" + data[i] + ".png";
+            image.style.width = "100%";
+            if (data[i].type === 'video') {
+              link.href = "./video.html?id=" + data[i];
+            } else {
+              link.href = "./normal.html?id=" + data[i];
+            }
+            link.appendChild(image);
+            section.appendChild(link);
+            if (i % 2 === 0) {
+              col1.appendChild(section);
+            } else {
+              col2.appendChild(section);
+            }
+          }
+        };
+
+      }
+    </script>
+  </body>
+</html>

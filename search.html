@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 52px">
+  <head>
+    <meta charset="utf-8" />
+    <title>小红书 - 发现</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta name="mobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <style>
+      .search-result-item {
+        font-size: 14px;
+        line-height: 44px;
+        border-bottom: 0.5px solid #e4e4e4;
+      }
+      .search-result-item img {
+        vertical-align: middle;
+        width: 24px;
+        margin-right: 4px;
+      }
+      .search-result-item strong {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div class="note-view-container">
+        <div class="narmal-note-container" style="padding-top: 46px;">
+          <div class="launch-app-container" style="position: fixed; top: 0; width: 100%; z-index: 100; max-width: 450px;">
+            <img width="100%" alt="顶部导航" src="./images/search_nav.png"/>
+            <a href="./index.html" style="display: block; width: 42px; height: 24px; position: absolute; top: 10px; right: 10px;"></a>
+          </div>
+          <div class="launch-app-container">
+            <a href="./author.html?name=fazhishipu">
+              <img width="100%" alt="栏目" src="./images/search_author.png"/>
+            </a>
+          </div>
+          <div class="launch-app-container">
+            <div class="search-result-list" style="background: #fff; padding: 0 10px;">
+              <!-- <div class="search-result-item">
+                <img width="24px" src="./images/search_icon.png"/>
+                <span><strong>发之食谱</strong></span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.onload = function () {
+        var list = document.querySelector('.search-result-list');
+        var data = [{
+          keyword: '发之食谱',
+          value: '',
+          category: 'zonghe',
+        }, {
+          keyword: '发之食谱',
+          value: '洗发水',
+          category: 'zonghe',
+        }, {
+          keyword: '发之食谱',
+          value: '苹果姜',
+          category: 'pingguojiang',
+        }, {
+          keyword: '发之食谱',
+          value: '无花果',
+          category: 'wuhuaguo',
+        }, {
+          keyword: '发之食谱',
+          value: '冷萃茶柚',
+          category: 'lengcuichayou',
+        }, {
+          keyword: '发之食谱',
+          value: '护发素',
+          category: 'famo',
+        }, {
+          keyword: '发之食谱',
+          value: '孕妇可以用吗',
+          category: 'zonghe',
+        }, {
+          keyword: '发之食谱',
+          value: '大米',
+          category: 'zonghe',
+        }, {
+          keyword: '发之食谱',
+          value: '发膜',
+          category: 'famo',
+        }, {
+          keyword: '发之食谱',
+          value: '米糠',
+          category: 'zonghe',
+        }, {
+          keyword: '发之食谱',
+          value: '净油',
+          category: 'zonghe',
+        }, {
+          keyword: '发之食谱',
+          value: '成分',
+          category: 'zonghe',
+        }, {
+          keyword: '发之食谱',
+          value: '无花果洗发水',
+          category: 'wuhuaguo',
+        }, {
+          keyword: '发之食谱',
+          value: '冷萃',
+          category: 'lengcuichayou',
+        }, {
+          keyword: '发之食谱',
+          value: '苹果姜洗发水',
+          category: 'pingguojiang',
+        }];
+        //动态插入数据
+        for (var i = 0; i < data.length; i++) {
+          if (data[i]) {
+            var div = document.createElement('div');
+            div.classList.add('search-result-item');
+            var link = document.createElement('a');
+            link.href = "./result.html?category=" + data[i].category;
+            var image = document.createElement('img');
+            image.src = "./images/search_icon.png";
+            var span = document.createElement('span');
+            span.innerHTML = '<strong>' + data[i].keyword + '</strong>' + data[i].value;
+            link.appendChild(image);
+            link.appendChild(span);
+            div.appendChild(link);
+            list.appendChild(div);
+          }
+        };
+      }
+    </script>
+  </body>
+</html>

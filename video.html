@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="font-size: 52px">
+  <head>
+    <meta charset="utf-8" />
+    <title>小红书</title>
+    <meta name="description" content="在1900 米山巅徒步，是一种什么体验？ 瑞士是徒步者的天堂，有太多美不胜收的徒步路线。 做了一番攻略后，我选择了 Stoos Ridge Hike (Klingenstock to Fronalps"/>
+    <meta name="keywords" content="徒步,旅行,风景,徒步路线推荐,户外,徒步,登山徒步" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
+    <meta name="format-detection" content="telephone=no,address=no,email=no" />
+    <meta name="mobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <style>
+      .absolute-fill-stage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -30px;
+        margin-top: -50px;
+        width: 72px;
+        height: 72px;
+      }
+      @keyframes wrapper-gradient {
+        0% {
+          transform: translateY(100%);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+      @keyframes hide-gradient {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
+      @keyframes hide-part-gradient {
+        0% {
+          transform: translateY(0);
+        }
+        80% {
+          transform: translateY(80%);
+        }
+      }
+      .show-animate {
+        animation: wrapper-gradient 0.25s linear;
+      }
+      .hide-animate {
+        animation: hide-gradient 0.25s linear;
+        animation-fill-mode: forwards;
+      }
+      .hide-part-animate {
+        animation: hide-part-gradient 0.25s linear;
+        animation-fill-mode: forwards;
+      }
+      .desc-container {
+        position: absolute; 
+        bottom: 60px;
+        padding: 16px 18px; 
+        color: #fff; 
+        background: #0000006e; 
+        font-size: 14px;
+        width: 100%;
+        max-width: 450px;
+      }
+      .desc-container img {
+        border-radius: 50%;
+        vertical-align: bottom;
+      }
+      .desc-container .content-author {
+        display: inline-block; 
+        line-height: 36px; 
+        font-size: 14px;
+      }
+      .desc-container .content-author-guanzhu {
+        display: inline-block; 
+        border-radius: 20px; 
+        padding: 4px 14px 6px; 
+        background: #fd3748; 
+        margin-left: 10px;
+      }
+      .desc-box {
+        position: relative;
+        line-height: 1.6;
+        margin-top: 10px;
+      }
+      .desc-box p {
+        margin: 0;
+        display: contents;
+      }
+      .desc-box.full p {
+        display: block;
+      }
+      .desc-box.full .desc-box-content {
+        height: auto;
+      }
+      .desc-box.full .desc-date {
+        display: block;
+      }
+      .desc-box-content {
+        height: 44px;
+        overflow: hidden;
+        /* text-overflow: ellipsis;
+        white-space: nowrap;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical; */
+      }
+      .desc-box-zhankai {
+        position: absolute;
+        bottom: -2px;
+        right: 0px;
+        color: #b4afb3;
+        background: #000;
+        padding: 0px 7px;
+      }
+      .desc-tag {
+        margin-left: 2px;
+        color: #dce6e8;
+      }
+      .desc-date {
+        margin-top: 20px;
+        color: #9da49d;
+        font-size: 12px;
+        display: none;
+      }
+      .content-mask {
+        width: 100%;
+        height: 100%;
+        background: #00000040;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      style="position: absolute; width: 0; height: 0"
+      aria-hidden="true"
+      id="__SVG_SPRITE_NODE__"
+    >
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 72 72"
+        id="play_s_f"
+      >
+        <g opacity=".5" filter="url(#play_s_f_filter0_d_701_14344)">
+          <path
+            d="M22.509 11.32l33.043 19.504c2.846 1.68 3.796 5.356 2.121 8.21a5.987 5.987 0 01-2.121 2.13L22.508 60.661a5.967 5.967 0 01-8.183-2.129 6.012 6.012 0 01-.825-3.04V16.489c0-3.313 2.676-5.998 5.978-5.998 1.066 0 2.112.286 3.031.829z"
+            fill="#fff"
+          ></path>
+        </g>
+        <defs>
+          <filter
+            id="play_s_f_filter0_d_701_14344"
+            x="-2"
+            y="-2"
+            width="76"
+            height="76"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix
+              in="SourceAlpha"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            ></feColorMatrix>
+            <feOffset></feOffset>
+            <feGaussianBlur stdDeviation="1"></feGaussianBlur>
+            <feColorMatrix
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"
+            ></feColorMatrix>
+            <feBlend
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow_701_14344"
+            ></feBlend>
+            <feBlend
+              in="SourceGraphic"
+              in2="effect1_dropShadow_701_14344"
+              result="shape"
+            ></feBlend>
+          </filter>
+        </defs>
+      </symbol>
+    </svg>
+    <div id="app">
+      <div class="note-view-container" style="background: #000;">
+        <div class="narmal-note-container" style="padding-bottom: 58px; height: 100%;">
+          <div class="launch-app-container" style="position: fixed; top: 0; width: 100%; z-index: 100; max-width: 450px;">
+            <img id="author" width="100%" alt="顶部导航" src="./images/video_nav.png"/>
+            <a style="display: block; width: 24px; height: 28px; position: absolute; top: 12px; left: 10px;" onclick="window.history.back()"></a>
+          </div>
+          <div id="my-video-container" style="background-color: #000; height: 100%; width: 100%;">
+            <video
+              id="my-video"
+              class="video absolute-fill long-size-image"
+              preload="metadata"
+              muted
+              src="./images/video/lengcuichayou_02/video.mp4"
+              type="video/mp4"
+              playsinline=""
+              webkit-playsinline=""
+              x5-video-player-type="h5"
+              x5-video-player-fullscreen="true"
+              style="width: 100%; object-fit: contain;"
+            ></video>
+            <div class="content-mask"></div>
+          </div>
+          <div id="stage-pause" class="stage-pause absolute-fill-stage">
+            <svg width="72" height="72"><use xlink:href="#play_s_f"></use></svg>
+          </div>
+          <div class="desc-container">
+            <div>
+              <img width="36" height="36" src="./images/video/lengcuichayou_02/author_head.png" />
+              <span class="content-author">朱珠 ZhuZhu</span>
+              <span class="content-author-guanzhu">关注</span>
+            </div>
+            <div class="desc-box">
+              <div class="desc-box-content">
+                <p>立春后，给头皮头发的第一道营养食谱</p>
+                <p>今天给大家推荐一个非常适合头皮油，发尾干的人使用的护发产品——发之食谱的冷萃茶柚发膜。</p>
+                <p>高山绿茶搭配东方柚子的天然精粹，配方疏油补水，用完后，头发会变得既清透又水润，头皮也清爽不油腻。搭配它们家的同款洗发水一起用，仿佛给头皮和头发喝了一杯清润的柚子茶，润而不腻。</p>
+                <p>
+                  <span class="desc-tag">#发之食谱</span>
+                  <span class="desc-tag">#冷萃发膜</span>
+                  <span class="desc-tag">#头皮油发尾干洗护推荐</span>
+                  <span class="desc-tag">#天猫小黑盒新品</span>
+                <p>
+              </div>
+              <div class="desc-date">02-06</div>
+              <div class="desc-box-zhankai">展开全文</div>
+            </div>
+          </div>
+          <div class="launch-app-container" style="position: fixed; bottom: 0px; width: 100%; z-index: 100; max-width: 450px;">
+            <img id="comment" width="100%" alt="评论" src="./images/video/lengcuichayou_02/comment_like_wai.png"/>
+            <span id="comment-open" style="display: block; width: 66px; height: 28px; position: absolute; bottom: 20px; right: 12px;"></span>
+          </div>
+          <div class="comments-container hide-animate" style="position: absolute; bottom: 0; z-index: 1000; height: 0px; overflow: hidden; max-width: 450px; ">
+            <div style="position: relative; padding-top: 50px; padding-bottom: 58px;">
+              <div class="launch-app-container" style="position: absolute; top: 0; width: 100%; max-width: 450px;">
+                <img id="author" width="100%" alt="顶部导航" src="./images/video/lengcuichayou_02/comment_number.png"/>
+                <span id="comment-close" style="display: block; width: 24px; height: 28px; position: absolute; top: 10px; right: 12px;"></span>
+              </div>
+              <div style="height: 492px; overflow: auto; background: #fff;">
+                <img id="author" width="100%" alt="顶部导航" src="./images/video/lengcuichayou_02/content.png"/>
+                <img id="author" width="100%" alt="顶部导航" src="./images/video/comment_end.png"/>
+              </div>
+              <div class="launch-app-container" style="position: absolute; bottom: 0px; width: 100%; max-width: 450px;">
+                <img id="author" width="100%" alt="顶部导航" src="./images/video/comment_input.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/utils.js"></script>
+    <script src="./js/data.js"></script>
+    <script>
+      window.onload = function () {
+        var params = queryURLParams(window.location.href);
+        var item = data[params.id] || data['003'];
+        var myVideo = document.querySelector("#my-video");
+        myVideo.src = "./images/video/" + item.name + "/video.mp4";
+        myVideo && myVideo.play();
+
+        var myVideoContainer = document.querySelector("#my-video-container");
+        var stagePause = document.querySelector("#stage-pause");
+        myVideoContainer.addEventListener('click', myVideoContainerClickHandler);
+        stagePause.addEventListener('click', stagePauseClickHandler);
+
+        var commentsVisible = false;
+        var commentsContainer = document.querySelector(".comments-container");
+        var commentOpen = document.querySelector("#comment-open");
+        var commentClose = document.querySelector("#comment-close");
+        commentOpen.addEventListener('click', commentOpenClickHandler);
+        commentClose.addEventListener('click', commentCloseClickHandler);
+        
+        // setTimeout(function() {
+        //   commentsContainer.style.visibility = 'visible';
+        // }, 100);
+
+        var contentMask = document.querySelector(".content-mask"); 
+        var descBox = document.querySelector(".desc-box"); 
+        var descBoxContent = document.querySelector(".desc-box-content"); 
+        var zhankai = document.querySelector(".desc-box-zhankai"); 
+        zhankai.addEventListener('click', zhankaiClickHandler);
+
+
+        function myVideoContainerClickHandler(e) {
+          if (commentsVisible) {
+            commentCloseClickHandler();
+          } else {
+            myVideo && myVideo.pause();
+            stagePause.style.visibility = 'visible';
+          }
+        }
+
+        function stagePauseClickHandler(e) {
+          myVideo && myVideo.play();
+          stagePause.style.visibility = 'hidden';
+        }
+
+        function commentOpenClickHandler(e) {
+          commentsContainer.classList.remove('hide-animate');
+          commentsContainer.classList.add('show-animate');
+          commentsVisible = true;
+          setTimeout(function() {
+            commentsContainer.style.height = '600px';
+          }, 100)
+        }
+
+        function commentCloseClickHandler(e) {
+          commentsContainer.classList.remove('show-animate');
+          commentsContainer.classList.add('hide-animate');
+          commentsVisible = false;
+          setTimeout(function() {
+            commentsContainer.style.height = '0px';
+          }, 100)
+        }
+
+        function zhankaiClickHandler(e) {
+          var currentClass = descBox.classList || '';
+          if (currentClass.contains('full')) {
+            descBox.classList.remove('full');
+            contentMask.style.display = 'none';
+            // descBox.classList.remove('show-animate');
+            // descBox.classList.add('hide-part-animate');
+          } else {
+            descBox.classList.add('full');
+            contentMask.style.display = 'block';
+            // descBox.classList.remove('hide-part-animate');
+            // descBox.classList.add('show-animate');
+          }
+        }
+        
+      }
+    </script>
+  </body>
+</html>
