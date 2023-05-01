@@ -105,8 +105,6 @@
             section.classList.add('note-card');
             image.src = "./images/faxian/" + dataList[i] + ".png";
             image.style.width = "100%";
-            console.log('data[i]');
-            console.log(data[dataList[i]]);
             if (data[dataList[i]] && data[dataList[i]].type === 'video') {
               link.href = "./video.html?id=" + dataList[i];
             } else {
