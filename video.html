@@ -270,7 +270,7 @@
     <script>
       window.onload = function () {
         var params = queryURLParams(window.location.href);
-        var item = data[params.id] || data['003'];
+        var item = data[params.id] || data['001'];
         var myVideo = document.querySelector("#my-video");
         myVideo.src = "./images/video/" + item.name + "/video.mp4";
         myVideo && myVideo.play();
