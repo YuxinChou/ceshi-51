@@ -89,7 +89,7 @@
           var screenWidth = document.documentElement.offsetWidth;
           // var timer = null;
           // 设置 content 的高度
-          carouselContent.style.height = carouselList[0].offsetHeight + 'px';
+          carouselContent.style.height = (carouselList[0].offsetHeight || 552) + 'px';
 
           // 动态生成小圆点
           for (var i = 0; i < carouselListLength; i++) {
@@ -118,7 +118,6 @@
           carouselContent.addEventListener('touchstart', touchstartHandler); // 滑动开始绑定的函数 touchstartHandler
           carouselContent.addEventListener('touchmove', touchmoveHandler); // 持续滑动绑定的函数 touchmoveHandler
           carouselContent.addEventListener('touchend', touchendHandeler); // 滑动结束绑定的函数 touchendHandeler
-      
           // 轮播图片切换下一张
           function showNext() {
             // 轮转下标
@@ -241,7 +240,7 @@
           }
 
 
-        }, 100);
+        }, 500);
         
       }
     </script>
