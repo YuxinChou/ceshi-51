@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>小红书</title>
-    <meta name="description" content="在1900 米山巅徒步，是一种什么体验？ 瑞士是徒步者的天堂，有太多美不胜收的徒步路线。 做了一番攻略后，我选择了 Stoos Ridge Hike (Klingenstock to Fronalps"/>
-    <meta name="keywords" content="徒步,旅行,风景,徒步路线推荐,户外,徒步,登山徒步" />
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"/>
     <meta name="format-detection" content="telephone=no,address=no,email=no" />
     <meta name="mobileOptimized" content="width" />
@@ -64,14 +64,18 @@
       .desc-container {
         position: absolute; 
         bottom: 60px;
-        padding: 16px 18px; 
+        padding: 12px 0; 
         color: #fff; 
-        background: #0000006e; 
+        /* background: #0000006e;  */
         font-size: 14px;
         width: 100%;
         max-width: 450px;
       }
       .desc-container img {
+        border-radius: 50%;
+        vertical-align: bottom;
+      }
+      .desc-container desc- {
         border-radius: 50%;
         vertical-align: bottom;
       }
@@ -113,13 +117,23 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical; */
       }
+      .desc-box-img,
+      .desc-box-img-unfold {
+        width: 100%;
+        border-radius: 0 !important;
+      }
       .desc-box-zhankai {
-        position: absolute;
+        /* position: absolute;
         bottom: -2px;
         right: 0px;
         color: #b4afb3;
         background: #000;
-        padding: 0px 7px;
+        padding: 0px 7px; */
+        position: absolute;
+        bottom: 6px;
+        right: 18px;
+        color: #b4afb3;
+        background: #000;
       }
       .desc-tag {
         margin-left: 2px;
@@ -222,13 +236,13 @@
             <svg width="72" height="72"><use xlink:href="#play_s_f"></use></svg>
           </div>
           <div class="desc-container">
-            <div>
+            <!-- <div>
               <img width="36" height="36" src="./images/video/lengcuichayou_02/author_head.png" />
               <span class="content-author">朱珠 ZhuZhu</span>
               <span class="content-author-guanzhu">关注</span>
-            </div>
+            </div> -->
             <div class="desc-box">
-              <div class="desc-box-content">
+              <!--<div class="desc-box-content">
                 <p>立春后，给头皮头发的第一道营养食谱</p>
                 <p>今天给大家推荐一个非常适合头皮油，发尾干的人使用的护发产品——发之食谱的冷萃茶柚发膜。</p>
                 <p>高山绿茶搭配东方柚子的天然精粹，配方疏油补水，用完后，头发会变得既清透又水润，头皮也清爽不油腻。搭配它们家的同款洗发水一起用，仿佛给头皮和头发喝了一杯清润的柚子茶，润而不腻。</p>
@@ -239,7 +253,9 @@
                   <span class="desc-tag">#天猫小黑盒新品</span>
                 <p>
               </div>
-              <div class="desc-date">02-06</div>
+              <div class="desc-date">02-06</div> -->
+              <img class="desc-box-img" width="100%" src="./images/video/lengcuichayou_02/desc.png" />
+              <img class="desc-box-img-unfold" width="100%" src="./images/video/lengcuichayou_02/desc-unfold.png" style="display: none;"/>
               <div class="desc-box-zhankai">展开全文</div>
             </div>
           </div>
@@ -265,6 +281,15 @@
         </div>
       </div>
     </div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-65XV69X1S0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-65XV69X1S0');
+    </script>
     <script src="./js/utils.js"></script>
     <script src="./js/data.js"></script>
     <script>
@@ -293,7 +318,8 @@
 
         var contentMask = document.querySelector(".content-mask"); 
         var descBox = document.querySelector(".desc-box"); 
-        var descBoxContent = document.querySelector(".desc-box-content"); 
+        var descBoxImg = document.querySelector(".desc-box-img"); 
+        var descBoxImgUnfold = document.querySelector(".desc-box-img-unfold"); 
         var zhankai = document.querySelector(".desc-box-zhankai"); 
         zhankai.addEventListener('click', zhankaiClickHandler);
 
@@ -334,11 +360,17 @@
           var currentClass = descBox.classList || '';
           if (currentClass.contains('full')) {
             descBox.classList.remove('full');
+            descBoxImg.style.display = "block";
+            descBoxImgUnfold.style.display = "none";
+            zhankai.innerHTML = '展开全文';
             contentMask.style.display = 'none';
             // descBox.classList.remove('show-animate');
             // descBox.classList.add('hide-part-animate');
           } else {
             descBox.classList.add('full');
+            descBoxImg.style.display = "none";
+            descBoxImgUnfold.style.display = "block";
+            zhankai.innerHTML = '收起';
             contentMask.style.display = 'block';
             // descBox.classList.remove('hide-part-animate');
             // descBox.classList.add('show-animate');
