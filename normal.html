@@ -22,14 +22,14 @@
       <div class="note-view-container">
         <div class="narmal-note-container" style="padding-top: 54px; padding-bottom: 58px;">
           <div class="launch-app-container" style="position: fixed; top: 0; width: 100%; z-index: 100; max-width: 450px;">
-            <img id="author" width="100%" alt="顶部导航" src="./images/normal/famo_03/author_nav.png"/>
+            <img id="nav" width="100%" src=""/>
             <a style="display: block; width: 24px; height: 28px; position: absolute; top: 12px; left: 10px;" onclick="window.history.back()"></a>
           </div>
           <div class="image-gallery-container">
             <div class="onix-carousel onix-carousel-container">
               <div class="onix-carousel-inner">
                 <div class="onix-carousel-inner-content">
-                  <!-- <div class="onix-carousel-item"><img src="./images/normal/famo_03/1.jpeg" alt=""></div> -->
+                  <!-- <div class="onix-carousel-item"><img alt=""></div> -->
                 </div>
               </div>
               <div class="onix-carousel-indicator-blur carousel-indicator-contrainer">
@@ -42,13 +42,14 @@
           <div class="content-container unfold-container">
             <div>
               <div class="reds-box block winkblank-padding" style="padding: 15px 0;">
-                <img id="content" width="100%" alt="内容" src="./images/normal/famo_03/content.png"/>
+                <img id="content" width="100%" src=""/>
+                <img id="comments" width="100%" src=""/>
                 <img width="100%" alt="内容" src="./images/normal/comment_end.png"/>
               </div>
             </div>
           </div>
           <div class="launch-app-container" style="position: fixed; bottom: -4px; width: 100%; z-index: 100; max-width: 450px;">
-            <img id="comment" width="100%" alt="评论" src="./images/normal/famo_03/comment_like.png"/>
+            <img id="footer" width="100%" alt="评论" />
           </div>
         </div>
       </div>
@@ -59,31 +60,55 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-65XV69X1S0');
     </script>
+    <script src="./js/data/data-famo.js"></script>
+    <script src="./js/data/data-faxian.js"></script>
+    <script src="./js/data/data-guanhao.js"></script>
+    <script src="./js/data/data-lengcuichayou.js"></script>
+    <script src="./js/data/data-pinguojiang.js"></script>
+    <script src="./js/data/data-wuhuaguo.js"></script>
+    <script src="./js/data/data-zonghe.js"></script>
     <script src="./js/utils.js"></script>
-    <script src="./js/data.js"></script>
     <script>
       window.onload = function () {
         var params = queryURLParams(window.location.href);
-        var item = data[params.id] || data['1'];
-        console.log('item')
-        console.log(item)
-        var author = document.querySelector('#author');
-        author.src = "./images/normal/" + item.name + "/author_nav.png";
+        console.log('params');
+        console.log(params);
+        var from = params.from;
+        var id = params.id;
+        var item = {};
+        if (from === 'guanhao') {
+          item = data_guanhao[id];
+        } else if (from === 'zonghe') {
+          item = data_zonghe[id];
+        } else if (from === 'lengcuichayou') {
+          item = data_lengcuichayou[id];
+        } else if (from === 'pingguojiang') {
+          item = data_pingguojiang[id];
+        } else if (from === 'wuhuaguo') {
+          item = data_wuhuaguo[id];
+        } else if (from === 'famo') {
+          item = data_famo[id];
+        } else {
+          item = data_faxian[id];
+        }
+        var nav = document.querySelector('#nav');
+        nav.src = "./images/content/" + id + "/nav.png";
         var content = document.querySelector('#content');
-        content.src = "./images/normal/" + item.name + "/content.png";
-        var comment = document.querySelector('#comment');
-        comment.src = "./images/normal/" + item.name + "/comment_like.png";
+        content.src = "./images/content/" + id + "/content.png";
+        var comments = document.querySelector('#comments');
+        comments.src = "./images/content/" + id + "/comments.png";
+        var footer = document.querySelector('#footer');
+        footer.src = "./images/content/" + id + "/footer.png";
 
         var carousel = document.querySelector('.onix-carousel-inner');
         var carouselContent = document.querySelector('.onix-carousel-inner-content');
-        for (var i = 1; i <= item.totalPics; i++) {
+        for (var i = 1; i <= item.pics; i++) {
           var carouselItem = document.createElement('div');
           var image = document.createElement('img');
           carouselItem.classList.add('onix-carousel-item');
-          image.src = "./images/normal/" + item.name + "/" + i + ".jpeg";
+          image.src = "./images/content/" + id + "/" + i + ".jpeg";
           carouselItem.appendChild(image);
           carouselContent.appendChild(carouselItem);
         }

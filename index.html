@@ -56,10 +56,9 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-65XV69X1S0');
     </script>
-    <script src="./js/data.js"></script>
+    <script src="./js/data/data-faxian.js"></script>
     <script src="./js/utils.js"></script>
     <script>
       var imgs;
@@ -69,38 +68,10 @@
       }
 
       window.onload = function () {
-        var faxian = document.querySelector('#faxian');
-        var col1 = document.querySelector('#faxian-col1');
-        var col2 = document.querySelector('#faxian-col2');
-        var dataList = ["1", "001", "2", "002", "3", "003", "4", "004", "5", "005", "6", "006", "7", "007", "008", "9", "009", "10", "0010", "15", "16", "19", "22", "23", "25", "26", "29", "37", "38", "43", "45", "48", "49", "51", "53", "59", "69", "70", "71", "75", "79", "81", "82", "84", "88", "89", "93", "94", "99", "107", "115", "119", "122", "123-1", "123-2", "123", "124", "125", "127", "128", "129", "130", "132", "133", "135", "136", "138", "140", "141", "148", "151", "152", "156", "158", "159", "160", "167", "173", "176", "177", "183", "", "191", "", "195", "198"];
-        // var dataList = ["1", "001", "2", "002", "3", "003", "4", "004", "5", "005"];
-        //动态插入数据
-        for (var i = 0; i < dataList.length; i++) {
-          if (dataList[i]) {
-            var section = document.createElement('section');
-            var link = document.createElement('a');
-            var image = document.createElement('img');
-            section.id = dataList[i];
-            section.classList.add('eds-note-card');
-            section.classList.add('note-card');
-            image.dataset.src = "./images/faxian/" + dataList[i] + ".png";
-            image.style.width = "100%";
-            image.style.minHeight = "250px";
-            if (data[dataList[i]] && data[dataList[i]].type === 'video') {
-              link.href = "./video.html?id=" + dataList[i];
-            } else {
-              link.href = "./normal.html?id=" + dataList[i];
-            }
-            link.appendChild(image);
-            section.appendChild(link);
-            if (i % 2 === 0) {
-              col1.appendChild(section);
-            } else {
-              col2.appendChild(section);
-            }
-          }
-        };
+        // 插入数据
+        insertDataHtml('faxian', data_faxian);
         // 将图片组件找到
+        var faxian = document.querySelector('#faxian');
         imgs = faxian.querySelectorAll('img');
         lazyLoad(imgs);
       }
