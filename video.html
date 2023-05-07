@@ -302,7 +302,11 @@
         }
 
         var myVideo = document.querySelector("#my-video");
-        myVideo.src = "./images/content/" + id + "/video.mp4";
+        if (item.videoUrl) {
+          myVideo.src = "./images/content/" + item.videoUrl + "/video.mp4";
+        } else {
+          myVideo.src = "./images/content/" + id + "/video.mp4";
+        }
         myVideo && myVideo.play();
 
         var myVideoContainer = document.querySelector("#my-video-container");
