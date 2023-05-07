@@ -30,7 +30,7 @@ function insertDataHtml(page, dataSource) {
             image.style.minHeight = "250px";
             if (name.indexOf('video-') > -1) {
                 link.href = "./video.html?from=" + page + "&id=" + name;
-            } else {
+            } else if (name.indexOf('article-') > -1) {
                 link.href = "./normal.html?from=" + page + "&id=" + name;
             }
             link.appendChild(image);
