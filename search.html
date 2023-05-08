@@ -15,7 +15,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="stylesheet" type="text/css" href="./static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <style>
       .search-result-item {
         font-size: 14px;
@@ -37,18 +37,18 @@
       <div class="note-view-container">
         <div class="narmal-note-container" style="padding-top: 46px;">
           <div class="launch-app-container" style="position: fixed; top: 0; width: 100%; z-index: 100; max-width: 450px;">
-            <img width="100%" alt="顶部导航" src="./static/images/search_nav.png"/>
+            <img width="100%" alt="顶部导航" src="./images/search_nav.png"/>
             <a href="./index.html" style="display: block; width: 42px; height: 24px; position: absolute; top: 10px; right: 10px;"></a>
           </div>
           <div class="launch-app-container">
             <a href="./author.html?name=fazhishipu">
-              <img width="100%" alt="栏目" src="./static/images/search_author.png"/>
+              <img width="100%" alt="栏目" src="./images/search_author.png"/>
             </a>
           </div>
           <div class="launch-app-container">
             <div class="search-result-list" style="background: #fff; padding: 0 10px;">
               <!-- <div class="search-result-item">
-                <img width="24px" src="./static/images/search_icon.png"/>
+                <img width="24px" src="./images/search_icon.png"/>
                 <span><strong>发之食谱</strong></span>
               </div> -->
             </div>
@@ -136,7 +136,7 @@
             var link = document.createElement('a');
             link.href = "./result.html?category=" + data[i].category;
             var image = document.createElement('img');
-            image.src = "./static/images/search_icon.png";
+            image.src = "./images/search_icon.png";
             var span = document.createElement('span');
             span.innerHTML = '<strong>' + data[i].keyword + '</strong>' + data[i].value;
             link.appendChild(image);
