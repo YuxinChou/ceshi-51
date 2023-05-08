@@ -73,8 +73,6 @@
     <script>
       window.onload = function () {
         var params = queryURLParams(window.location.href);
-        console.log('params');
-        console.log(params);
         var from = params.from;
         var id = params.id;
         var item = {};
@@ -123,7 +121,7 @@
           var screenWidth = document.documentElement.offsetWidth;
           // var timer = null;
           // 设置 content 的高度
-          carouselContent.style.height = (carouselList[0].offsetHeight || 552) + 'px';
+          carouselContent.style.height = (carouselList[0].offsetHeight || item.height || 552) + 'px';
 
           // 动态生成小圆点
           for (var i = 0; i < carouselListLength; i++) {
@@ -274,7 +272,7 @@
           }
 
 
-        }, 500);
+        }, 1000);
         
       }
     </script>

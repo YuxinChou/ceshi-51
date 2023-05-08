@@ -1,6 +1,6 @@
 var data_guanhao = {
     "article-guanhao_08": { belong: [ 'guanhao' ], pics: 9 },
-    "article-guanhao_10": { belong: [ 'guanhao' ], pics: 2 },
+    "article-guanhao_10": { belong: [ 'guanhao' ], pics: 1 },
     "article-guanhao_12": { belong: [ 'guanhao' ], pics: 3 },
     "article-guanhao_31": { belong: [ 'guanhao' ], pics: 1 },
     "article-guanhao_32": { belong: [ 'guanhao' ], pics: 1 },

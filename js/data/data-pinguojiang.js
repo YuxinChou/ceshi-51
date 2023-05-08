@@ -11,7 +11,7 @@ var data_pingguojiang = {
     "article-pingguojiang_10": { belong: [ 'pingguojiang' ], pics: 4 },
     "article-pingguojiang_11": { belong: [ 'pingguojiang' ], pics: 6 },
     "article-pingguojiang_12": { belong: [ 'pingguojiang' ], pics: 8 },
-    "article-pingguojiang_13": { belong: [ 'pingguojiang' ], pics: 1 },
+    "article-pingguojiang_13": { belong: [ 'pingguojiang' ], pics: 1, height: 276 },
     "article-pingguojiang_14": { belong: [ 'pingguojiang' ], pics: 2 },
     "article-pingguojiang_15": { belong: [ 'pingguojiang' ], pics: 2 },
     "article-pingguojiang_16": { belong: [ 'pingguojiang' ], pics: 8 },
