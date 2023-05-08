@@ -18,14 +18,14 @@ function insertDataHtml(page, dataSource) {
     //动态插入数据
     for (var i = 0; i < dataList.length; i++) {
         var name = dataList[i];
-        if (name) {
+        if (name && name.indexOf("kong") === -1) {
             var section = document.createElement('section');
             var link = document.createElement('a');
             var image = document.createElement('img');
             section.id = name;
             section.classList.add('eds-note-card');
             section.classList.add('note-card');
-            image.dataset.src = "./images/content/" + name + "/" + name.replace('article-', '').replace('video-', '') + ".png";
+            image.dataset.src = "./images/content/" + (dataSource[name].imageUrl || name) + "/" + (dataSource[name].imageUrl || name.replace('article-', '').replace('video-', '')) + ".png";
             image.style.width = "100%";
             image.style.minHeight = "250px";
             if (name.indexOf('video-') > -1) {
