@@ -9,7 +9,7 @@ var data_zonghe = {
     "article-pingguojiang_4": { belong: [ 'zonghe' ], pics: 8 },
     "article-wuhuaguo_15": { belong: [ 'zonghe' ], pics: 3 },
     
-    "video-faxian_28": { belong: [ 'zonghe' ] },
+    // "video-faxian_28": { belong: [ 'zonghe' ] }, //没有
     "video-faxian_800": { belong: [ 'zonghe' ], videoUrl: 'video-famo_17' },
     "video-faxian_820": { belong: [ 'zonghe' ] },
     "video-guanhao_01": { belong: [ 'zonghe' ] },
