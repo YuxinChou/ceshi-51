@@ -15,7 +15,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/main.css">
     <style>
       .absolute-fill-stage {
         position: absolute;
@@ -213,7 +213,7 @@
       <div class="note-view-container" style="background: #000;">
         <div class="narmal-note-container" style="padding-bottom: 58px; height: 100%;">
           <div class="launch-app-container" style="position: fixed; top: 0; width: 100%; z-index: 100; max-width: 450px;">
-            <img id="nav" width="100%" src="./images/video_nav.png"/>
+            <img id="nav" width="100%" src="./static/images/video_nav.png"/>
             <a style="display: block; width: 24px; height: 28px; position: absolute; top: 12px; left: 10px;" onclick="window.history.back()"></a>
           </div>
           <div id="my-video-container" style="background-color: #000; height: 100%; width: 100%;">
@@ -237,7 +237,7 @@
           </div>
           <div class="desc-container">
             <!-- <div>
-              <img width="36" height="36" src="./images/video/lengcuichayou_02/author_head.png" />
+              <img width="36" height="36" src="./static/images/video/lengcuichayou_02/author_head.png" />
               <span class="content-author">朱珠 ZhuZhu</span>
               <span class="content-author-guanzhu">关注</span>
             </div> -->
@@ -254,27 +254,27 @@
                 <p>
               </div>
               <div class="desc-date">02-06</div> -->
-              <img class="desc-box-img" width="100%" src="./images/video/lengcuichayou_02/desc.png" />
-              <img class="desc-box-img-unfold" width="100%" src="./images/video/lengcuichayou_02/desc-unfold.png" style="display: none;"/>
+              <img class="desc-box-img" width="100%" src="./static/images/video/lengcuichayou_02/desc.png" />
+              <img class="desc-box-img-unfold" width="100%" src="./static/images/video/lengcuichayou_02/desc-unfold.png" style="display: none;"/>
               <div class="desc-box-zhankai">展开全文</div>
             </div>
           </div>
           <div class="launch-app-container" style="position: fixed; bottom: 0px; width: 100%; z-index: 100; max-width: 450px;">
-            <img id="comment" width="100%" alt="评论" src="./images/video/lengcuichayou_02/comment_like_wai.png"/>
+            <img id="comment" width="100%" alt="评论" src="./static/images/video/lengcuichayou_02/comment_like_wai.png"/>
             <span id="comment-open" style="display: block; width: 66px; height: 28px; position: absolute; bottom: 20px; right: 12px;"></span>
           </div>
           <div class="comments-container hide-animate" style="position: absolute; bottom: 0; z-index: 1000; height: 0px; overflow: hidden; max-width: 450px; ">
             <div style="position: relative; padding-top: 50px; padding-bottom: 58px;">
               <div class="launch-app-container" style="position: absolute; top: 0; width: 100%; height:54px; max-width: 450px;">
-                <img id="author" width="100%" alt="顶部导航" src="./images/video/lengcuichayou_02/comment_number.png"/>
+                <img id="author" width="100%" alt="顶部导航" src="./static/images/video/lengcuichayou_02/comment_number.png"/>
                 <span id="comment-close" style="display: block; width: 24px; height: 28px; position: absolute; top: 10px; right: 12px;"></span>
               </div>
               <div style="height: 492px; overflow: auto; background: #fff;">
-                <img id="author" width="100%" alt="顶部导航" src="./images/video/lengcuichayou_02/content.png"/>
-                <img id="author" width="100%" alt="顶部导航" src="./images/video/comment_end.png"/>
+                <img id="author" width="100%" alt="顶部导航" src="./static/images/video/lengcuichayou_02/content.png"/>
+                <img id="author" width="100%" alt="顶部导航" src="./static/images/video/comment_end.png"/>
               </div>
               <div class="launch-app-container" style="position: absolute; bottom: 0px; width: 100%; max-width: 450px;">
-                <img id="author" width="100%" alt="顶部导航" src="./images/video/comment_input.png"/>
+                <img id="author" width="100%" alt="顶部导航" src="./static/images/video/comment_input.png"/>
               </div>
             </div>
           </div>
@@ -290,14 +290,14 @@
 
       gtag('config', 'G-65XV69X1S0');
     </script>
-    <script src="./js/data/data-famo.js"></script>
-    <script src="./js/data/data-faxian.js"></script>
-    <script src="./js/data/data-guanhao.js"></script>
-    <script src="./js/data/data-lengcuichayou.js"></script>
-    <script src="./js/data/data-pinguojiang.js"></script>
-    <script src="./js/data/data-wuhuaguo.js"></script>
-    <script src="./js/data/data-zonghe.js"></script>
-    <script src="./js/utils.js"></script>
+    <script src="./static/js/data/data-famo.js"></script>
+    <script src="./static/js/data/data-faxian.js"></script>
+    <script src="./static/js/data/data-guanhao.js"></script>
+    <script src="./static/js/data/data-lengcuichayou.js"></script>
+    <script src="./static/js/data/data-pinguojiang.js"></script>
+    <script src="./static/js/data/data-wuhuaguo.js"></script>
+    <script src="./static/js/data/data-zonghe.js"></script>
+    <script src="./static/js/utils.js"></script>
     <script>
       window.onload = function () {
         var params = queryURLParams(window.location.href);
@@ -321,7 +321,7 @@
         }
 
         var myVideo = document.querySelector("#my-video");
-        myVideo.src = "./images/content/" + id + "/video.mp4";
+        myVideo.src = "./static/images/content/" + id + "/video.mp4";
         myVideo && myVideo.play();
 
         var myVideoContainer = document.querySelector("#my-video-container");

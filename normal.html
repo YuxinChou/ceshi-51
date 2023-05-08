@@ -15,7 +15,7 @@
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/main.css">
   </head>
   <body>
     <div id="app">
@@ -44,7 +44,7 @@
               <div class="reds-box block winkblank-padding" style="padding: 15px 0;">
                 <img id="content" width="100%" src=""/>
                 <img id="comments" width="100%" src=""/>
-                <img width="100%" alt="内容" src="./images/normal/comment_end.png"/>
+                <img width="100%" alt="内容" src="./static/images/normal/comment_end.png"/>
               </div>
             </div>
           </div>
@@ -62,14 +62,14 @@
       gtag('js', new Date());
       gtag('config', 'G-65XV69X1S0');
     </script>
-    <script src="./js/data/data-famo.js"></script>
-    <script src="./js/data/data-faxian.js"></script>
-    <script src="./js/data/data-guanhao.js"></script>
-    <script src="./js/data/data-lengcuichayou.js"></script>
-    <script src="./js/data/data-pinguojiang.js"></script>
-    <script src="./js/data/data-wuhuaguo.js"></script>
-    <script src="./js/data/data-zonghe.js"></script>
-    <script src="./js/utils.js"></script>
+    <script src="./static/js/data/data-famo.js"></script>
+    <script src="./static/js/data/data-faxian.js"></script>
+    <script src="./static/js/data/data-guanhao.js"></script>
+    <script src="./static/js/data/data-lengcuichayou.js"></script>
+    <script src="./static/js/data/data-pinguojiang.js"></script>
+    <script src="./static/js/data/data-wuhuaguo.js"></script>
+    <script src="./static/js/data/data-zonghe.js"></script>
+    <script src="./static/js/utils.js"></script>
     <script>
       window.onload = function () {
         var params = queryURLParams(window.location.href);
@@ -92,13 +92,13 @@
           item = data_faxian[id];
         }
         var nav = document.querySelector('#nav');
-        nav.src = "./images/content/" + id + "/nav.png";
+        nav.src = "./static/images/content/" + id + "/nav.png";
         var content = document.querySelector('#content');
-        content.src = "./images/content/" + id + "/content.png";
+        content.src = "./static/images/content/" + id + "/content.png";
         var comments = document.querySelector('#comments');
-        comments.src = "./images/content/" + id + "/comments.png";
+        comments.src = "./static/images/content/" + id + "/comments.png";
         var footer = document.querySelector('#footer');
-        footer.src = "./images/content/" + id + "/footer.png";
+        footer.src = "./static/images/content/" + id + "/footer.png";
 
         var carousel = document.querySelector('.onix-carousel-inner');
         var carouselContent = document.querySelector('.onix-carousel-inner-content');
@@ -106,7 +106,7 @@
           var carouselItem = document.createElement('div');
           var image = document.createElement('img');
           carouselItem.classList.add('onix-carousel-item');
-          image.src = "./images/content/" + id + "/" + i + ".jpeg";
+          image.src = "./static/images/content/" + id + "/" + i + ".jpeg";
           carouselItem.appendChild(image);
           carouselContent.appendChild(carouselItem);
         }
