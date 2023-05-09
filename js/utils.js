@@ -27,7 +27,7 @@ function insertDataHtml(page, dataSource) {
             section.classList.add('note-card');
             image.dataset.src = "./images/content/" + (dataSource[name].imageUrl || name) + "/" + (dataSource[name].imageUrl || name.replace('article-', '').replace('video-', '')) + ".png";
             image.style.width = "100%";
-            image.style.minHeight = "250px";
+            image.style.minHeight = "150px";
             if (name.indexOf('video-') > -1) {
                 link.href = "./video.html?from=" + page + "&id=" + name;
             } else if (name.indexOf('article-') > -1) {
