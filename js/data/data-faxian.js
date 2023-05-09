@@ -71,7 +71,7 @@ var data_faxian = {
     "guanggao-4": { belong: [ 'faxian' ], imageUrl: 'lengcuichayou_123' },
     "article-pingguojiang_10": { belong: [ 'faxian' ], pics: 4 },
     "article-wuhuaguo_19": { belong: [ 'faxian' ], pics: 8 },
-    "article-guanhao_10": { belong: [ 'faxian' ], pics: 1 },
+    "article-guanhao_10": { belong: [ 'faxian' ], pics: 2 },
     "article-lengcuichayou_4": { belong: [ 'faxian' ], pics: 4 },
     "article-lengcuichayou_7": { belong: [ 'faxian' ], pics: 4 },
     "video-faxian_133": { belong: [ 'faxian' ] },
