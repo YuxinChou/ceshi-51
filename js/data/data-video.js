@@ -20,12 +20,12 @@ var data_video = {
     "video-guanhao_13": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_13.mp4" },
     "video-guanhao_14": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_07.mp4" }, //xxx
     "video-guanhao_15": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_15.mp4" },
-    "video-guanhao_16": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_16.mp4" }, //xxx
+    "video-guanhao_16": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/guanhao_16_new.mp4" }, //xxx
     "video-guanhao_17": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_17.mp4" },
     "video-guanhao_18": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_18.mp4" },
     "video-guanhao_19": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_19.mp4" },
     "video-guanhao_20": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_20.mp4" },
-    "video-guanhao_21": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_16.mp4" }, //xxx
+    "video-guanhao_21": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/guanhao_16_new.mp4" }, //xxx
     "video-guanhao_22": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_22.mp4" },
     "video-guanhao_23": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_23.mp4" },
     "video-guanhao_24": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_24.mp4" },
@@ -36,8 +36,8 @@ var data_video = {
     "video-guanhao_29": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_29.mp4" },
     "video-guanhao_30": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_30.mp4" },
     "video-guanhao_34": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_34.mp4" },
-    "video-guanhao_35": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videoguanhao_35.mp4" },
-    "video-guanhao_80": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_80.mp4" },
+    "video-guanhao_35": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/guanhao_16_new.mp4" },
+    "video-guanhao_80": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/guanhao_16_new.mp4" },
     "video-guanhao_81": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_81.mp4" },
     "video-lengcuichayou_2": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-lengcuichayou_2.mp4" },
     "video-lengcuichayou_10": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-lengcuichayou_10.mp4" },
@@ -49,3 +49,9 @@ var data_video = {
     "video-wuhuaguo_05": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-wuhuaguo_05.mp4" },
     "video-wuhuaguo_18": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-wuhuaguo_18.mp4" },
 };
+
+
+guanhao_16
+guanhao_35
+guanhao_80
+guanhao_21
