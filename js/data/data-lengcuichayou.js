@@ -3,7 +3,7 @@ var data_lengcuichayou = {
     "video-lengcuichayou_2": { belong: [ 'lengcui' ] },
     "article-lengcuichayou_4": { belong: [ 'lengcui' ], pics: 4 },
     "article-lengcuichayou_3": { belong: [ 'lengcui' ], pics: 1 },
-    "video-guanhao_03": { belong: [ 'lengcui' ] },
+    "article-guanhao_36": { belong: [ 'guanhao' ], pics: 1 },
     "article-lengcuichayou_6": { belong: [ 'lengcui' ], pics: 2 },
     "article-lengcuichayou_5": { belong: [ 'lengcui' ], pics: 1 },
     "article-lengcuichayou_7": { belong: [ 'lengcui' ], pics: 4 },

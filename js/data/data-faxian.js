@@ -1,5 +1,5 @@
 var data_faxian = {
-    "article-faxian_280": { belong: [ 'faxian' ], pics: 4 },
+    "article-faxian_280": { belong: [ 'faxian' ], pics: 3 },
     "video-lengcuichayou_2": { belong: [ 'faxian' ] },
     "article-lengcuichayou_18": { belong: [ 'faxian' ], pics: 3 },
     "article-faxian_808": { belong: [ 'faxian' ], pics: 5, height: 311 },

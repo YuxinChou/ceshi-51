@@ -3,7 +3,7 @@ var data_guanhao = {
     "video-guanhao_02": { belong: [ 'guanhao' ] },
     "video-guanhao_01": { belong: [ 'guanhao' ] },
     "video-guanhao_04": { belong: [ 'guanhao' ] },
-    "video-guanhao_03": { belong: [ 'guanhao' ] },
+    "article-guanhao_36": { belong: [ 'guanhao' ], pics: 1 },
     "video-guanhao_28": { belong: [ 'guanhao' ] },
     "video-guanhao_29": { belong: [ 'guanhao' ] },
     "video-guanhao_27": { belong: [ 'guanhao' ], videoUrl: 'video-famo_17' },
