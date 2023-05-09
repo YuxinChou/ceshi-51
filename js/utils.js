@@ -35,10 +35,21 @@ function insertDataHtml(page, dataSource) {
             }
             link.appendChild(image);
             section.appendChild(link);
-            if (i % 2 === 0) {
-                col1.appendChild(section);
+            console.log('dataSource[name].col');
+            console.log(dataSource[name].col);
+            if  (dataSource[name].col) {
+                
+                if (dataSource[name].col === 'col1') {
+                    col1.appendChild(section);
+                } else {
+                    col2.appendChild(section);
+                }
             } else {
-                col2.appendChild(section);
+                if (i % 2 === 0) {
+                    col1.appendChild(section);
+                } else {
+                    col2.appendChild(section);
+                }
             }
         }
     };
