@@ -92,14 +92,6 @@ var data_faxian = {
     "article-famo_15": { belong: [ 'faxian' ], pics: 5, height: 304 },
     "article-pingguojiang_15": { belong: [ 'faxian' ], pics: 2 },
     "article-famo_13": { belong: [ 'faxian' ], pics: 6 },
-    "video-guanhao_03": { belong: [ 'faxian' ] },
-
-
-    // "article-famo_1": { belong: [ 'faxian' ], pics: 1 },
-    // "article-lengcuichayou_6": { belong: [ 'faxian' ], pics: 2 },
-    // "article-pingguojiang_3": { belong: [ 'faxian' ], pics: 6 },
-    // "article-pingguojiang_4": { belong: [ 'faxian' ], pics: 8 },
-    // "article-wuhuaguo_03": { belong: [ 'faxian' ], pics: 4 },
-    // "article-wuhuaguo_11": { belong: [ 'faxian' ], pics: 4 },
+    "video-lengcuichayou_17": { belong: [ 'famo' ] },
 
 };

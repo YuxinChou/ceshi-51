@@ -20,7 +20,7 @@ var data_zonghe = {
     "kong2": {},
     "article-wuhuaguo_15": { belong: [ 'zonghe' ], pics: 3 },
     "video-wuhuaguo_01": { belong: [ 'zonghe' ] },
-    "video-guanhao_16": { belong: [ 'zonghe' ] },
+    "video-guanhao_80": { belong: [ 'zonghe' ] },
     "video-guanhao_19": { belong: [ 'zonghe' ] },
     "article-faxian_801": { belong: [ 'zonghe' ], pics: 7 },
     "video-wuhuaguo_05": { belong: [ 'wuhuaguo' ], videoUrl: 'video-wuhuaguo_01' },
