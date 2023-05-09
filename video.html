@@ -271,38 +271,42 @@
 
       gtag('config', 'G-65XV69X1S0');
     </script>
-    <script src="./js/data/data-famo.js"></script>
+    <!-- <script src="./js/data/data-famo.js"></script>
     <script src="./js/data/data-faxian.js"></script>
     <script src="./js/data/data-guanhao.js"></script>
     <script src="./js/data/data-lengcuichayou.js"></script>
     <script src="./js/data/data-pinguojiang.js"></script>
     <script src="./js/data/data-wuhuaguo.js"></script>
-    <script src="./js/data/data-zonghe.js"></script>
+    <script src="./js/data/data-zonghe.js"></script> -->
+    <script src="./js/data/data-video.js"></script>
     <script src="./js/utils.js"></script>
     <script>
       window.onload = function () {
         var params = queryURLParams(window.location.href);
         var from = params.from;
         var id = params.id;
-        var item = {};
-        if (from === 'guanhao') {
-          item = data_guanhao[id];
-        } else if (from === 'zonghe') {
-          item = data_zonghe[id];
-        } else if (from === 'lengcuichayou') {
-          item = data_lengcuichayou[id];
-        } else if (from === 'pingguojiang') {
-          item = data_pingguojiang[id];
-        } else if (from === 'wuhuaguo') {
-          item = data_wuhuaguo[id];
-        } else if (from === 'famo') {
-          item = data_famo[id];
-        } else {
-          item = data_faxian[id];
-        }
+        // var item = {};
+        // if (from === 'guanhao') {
+        //   item = data_guanhao[id];
+        // } else if (from === 'zonghe') {
+        //   item = data_zonghe[id];
+        // } else if (from === 'lengcuichayou') {
+        //   item = data_lengcuichayou[id];
+        // } else if (from === 'pingguojiang') {
+        //   item = data_pingguojiang[id];
+        // } else if (from === 'wuhuaguo') {
+        //   item = data_wuhuaguo[id];
+        // } else if (from === 'famo') {
+        //   item = data_famo[id];
+        // } else {
+        //   item = data_faxian[id];
+        // }
+        var item = data_video[id];
 
         var myVideo = document.querySelector("#my-video");
-        if (item.videoUrl) {
+        if (item.qiUrl) {
+          myVideo.src = item.qiUrl;
+        } else if (item.videoUrl) {
           myVideo.src = "./images/content/" + item.videoUrl + "/video.mp4";
         } else {
           myVideo.src = "./images/content/" + id + "/video.mp4";

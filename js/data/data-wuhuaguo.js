@@ -8,7 +8,7 @@ var data_wuhuaguo = {
     "article-wuhuaguo_06": { belong: [ 'wuhuaguo' ], pics: 3, height: 276 },
     "video-wuhuaguo_05": { belong: [ 'wuhuaguo' ], videoUrl: 'video-wuhuaguo_01' },
     "article-wuhuaguo_07": { belong: [ 'wuhuaguo' ], pics: 5 },
-    "faxian_123-1": {},
+    "lengcuichayou_123": {},
     "video-guanhao_24": { belong: [ 'wuhuaguo' ] },
     "article-wuhuaguo_08": { belong: [ 'wuhuaguo' ], pics: 2, height: 233 },
     "article-wuhuaguo_09": { belong: [ 'wuhuaguo' ], pics: 7 },

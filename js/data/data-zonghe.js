@@ -14,7 +14,7 @@ var data_zonghe = {
     "article-faxian_808": { belong: [ 'zonghe' ], pics: 5, height: 311 },
     "kong": {},
     "video-guanhao_24": { belong: [ 'zonghe' ] },
-    "faxian_122": { belong: [ 'zonghe' ] },
+    "lengcuichayou_123": { belong: [ 'zonghe' ] },
     "article-guanhao_33": { belong: [ 'zonghe' ], pics: 1 },
     "video-guanhao_14": { belong: [ 'zonghe' ], videoUrl: 'video-famo_17' },
     "kong2": {},

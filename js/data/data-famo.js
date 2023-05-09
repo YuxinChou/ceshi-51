@@ -9,7 +9,7 @@ var data_famo = {
     "article-lengcuichayou_7": { belong: [ 'famo' ], pics: 4 },
     "article-famo_8": { belong: [ 'famo' ], pics: 2 },
     "article-famo_9": { belong: [ 'famo' ], pics: 7, height: 314 },
-    "sousuo_123": { belong: [ 'famo' ] },
+    "lengcuichayou_123": { belong: [ 'famo' ] },
     "video-guanhao_03": { belong: [ 'famo' ] },
     "kong": {},
     "article-famo_10": { belong: [ 'famo' ], pics: 5 },
