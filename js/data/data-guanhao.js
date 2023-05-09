@@ -10,7 +10,7 @@ var data_guanhao = {
     "article-guanhao_31": { belong: [ 'guanhao' ], pics: 1 },
     "video-guanhao_06": { belong: [ 'guanhao' ] },
     "video-guanhao_07": { belong: [ 'guanhao' ], videoUrl: 'video-famo_17' },
-    "que": {},
+    "article-guanhao_12": { belong: [ 'faxian' ], pics: 3 }, //que
     "video-guanhao_30": { belong: [ 'guanhao' ] },
     "article-guanhao_10": { belong: [ 'guanhao' ], pics: 1 },
     "article-guanhao_32": { belong: [ 'guanhao' ], pics: 1 },
@@ -33,6 +33,4 @@ var data_guanhao = {
     "video-guanhao_24": { belong: [ 'guanhao' ] },
     "video-guanhao_22": { belong: [ 'guanhao' ] },
 
-    // "article-guanhao_08": { belong: [ 'guanhao' ], pics: 9 },
-    
 };

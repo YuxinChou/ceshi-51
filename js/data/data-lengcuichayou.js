@@ -15,7 +15,7 @@ var data_lengcuichayou = {
     "video-lengcuichayou_12": { belong: [ 'lengcui' ] },
     "video-lengcuichayou_10": { belong: [ 'lengcui' ] },
     "article-lengcuichayou_18": { belong: [ 'lengcui' ], pics: 3 },
-    "que": {},
+    "article-guanhao_12": { belong: [ 'faxian' ], pics: 3 }, //que
     "video-lengcuichayou_17": { belong: [ 'lengcui' ] },
     "article-lengcuichayou_11": { belong: [ 'lengcui' ], pics: 6, height: 308 },
     "video-guanhao_28": { belong: [ 'lengcui' ] },
