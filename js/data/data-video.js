@@ -4,7 +4,7 @@ var data_video = {
     "video-faxian_107": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-faxian_107.mp4" },
     "video-faxian_133": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-faxian_133.mp4" },
     "video-faxian_151": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-faxian_151.mp4" },
-    "video-faxian_152": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-faxian_151.mp4" },
+    "video-faxian_152": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/152video-faxian_152.mp4" },
     "video-faxian_800": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_07.mp4" }, //xxx
     "video-faxian_801": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-faxian_801.mp4" },
     "video-faxian_805": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-faxian_805.mp4" },
@@ -20,12 +20,12 @@ var data_video = {
     "video-guanhao_13": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_13.mp4" },
     "video-guanhao_14": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_07.mp4" }, //xxx
     "video-guanhao_15": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_15.mp4" },
-    "video-guanhao_16": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_07.mp4" }, //xxx
+    "video-guanhao_16": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_16.mp4" }, //xxx
     "video-guanhao_17": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_17.mp4" },
     "video-guanhao_18": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_18.mp4" },
     "video-guanhao_19": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_19.mp4" },
     "video-guanhao_20": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_20.mp4" },
-    "video-guanhao_21": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_07.mp4" }, //xxx
+    "video-guanhao_21": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/video-guanhao_16.mp4" }, //xxx
     "video-guanhao_22": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_22.mp4" },
     "video-guanhao_23": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_23.mp4" },
     "video-guanhao_24": { qiUrl: "http://rud6oq6s8.hn-bkt.clouddn.com/videovideo-guanhao_24.mp4" },

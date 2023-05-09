@@ -221,7 +221,6 @@
               id="my-video"
               class="video absolute-fill long-size-image"
               preload="metadata"
-              muted
               src=""
               type="video/mp4"
               playsinline=""
@@ -312,10 +311,14 @@
         } else {
           myVideo.src = "./images/content/" + id + "/video.mp4";
         }
-        myVideo && myVideo.play();
+        myVideo.load();
+        // setTimeout(function() { 
+        //   myVideo && myVideo.play();
+        // }, 500);
 
         var myVideoContainer = document.querySelector("#my-video-container");
         var stagePause = document.querySelector("#stage-pause");
+        stagePause.style.visibility = 'visible';
         myVideoContainer.addEventListener('click', myVideoContainerClickHandler);
         stagePause.addEventListener('click', stagePauseClickHandler);
 
