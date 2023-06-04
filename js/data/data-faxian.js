@@ -45,7 +45,7 @@ var data_faxian = {
     "video-faxian_152": { belong: [ 'faxian' ] },
     "article-faxian_125": { belong: [ 'faxian' ], pics: 4 },
     "video-guanhao_19": { belong: [ 'faxian' ] },
-    "video-guanhao_35": { belong: [ 'faxian' ], cdnUrl: 'http://rud6oq6s8.hn-bkt.clouddn.com/videoguanhao_35.mp4' },
+    "video-guanhao_35": { belong: [ 'faxian' ], cdnUrl: 'http://rvq16nnml.hn-bkt.clouddn.com/videoguanhao_35.mp4' },
     "article-lengcuichayou_6": { belong: [ 'faxian' ] },
     "article-guanhao_33": { belong: [ 'faxian' ], pics: 1 },
     "article-lengcuichayou_8": { belong: [ 'faxian' ], pics: 1, height: 320 },
